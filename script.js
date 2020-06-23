@@ -13,3 +13,9 @@ function clearDisplay() {
   document.getElementById("display").innerText = "";
   document.getElementById("history").innerText = "";
 }
+
+function backspace() {
+ let entry = document.getElementById("display").innerText;
+ document.getElementById("display").innerText = entry.substr(0, (entry.length - 1));
+ 
+}
