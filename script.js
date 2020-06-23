@@ -17,5 +17,4 @@ function clearDisplay() {
 function backspace() {
  let entry = document.getElementById("display").innerText;
  document.getElementById("display").innerText = entry.substr(0, (entry.length - 1));
- 
 }
