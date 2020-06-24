@@ -1,0 +1,18 @@
+
+
+#buttons {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin: auto;
+    padding: 10%;
+    position: absolute;
+    bottom: 10%;
+    
+}
+
+button {
+    padding: 30px;
+    font-size: 30px;
+    border-radius: 50%;
+}
+
