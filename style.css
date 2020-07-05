@@ -1,3 +1,18 @@
+:root {
+  --main: #43474a;
+  --equal: #1099e3;
+  --operator: #ffa600;
+  --text1: white;
+  --text2: #1099e3;
+  --background: #30302f;
+  --border: #949291;
+  --type2: #7d7d7d;
+}
+
+body {
+  background-color: var(--background);
+}
+
 #calc {
   max-width: 500px;
   margin: auto;
@@ -5,7 +20,18 @@
 
 #screen {
   position: absolute;
-  right: 30%;
+  right: 35%;
+  color: var(--text1);
+}
+
+button {
+  padding: 30px;
+  font-size: 30px;
+  user-select: none;
+  background-color: var(--main);
+  color: var(--text1);
+  border-radius: 10px;
+  border: 1px solid var(--border);
 }
 
 #buttons {
@@ -15,15 +41,20 @@
   margin: auto;
   padding: 10%;
   position: absolute;
-  bottom: 10%;
+  bottom: 0;
+}
+
+#buttons .type2 {
+  background-color: var(--type2);
+}
+
+#buttons .operator {
+  background-color: var(--operator);
+  color: var(--text1);
 }
 
 #buttons #equals {
   grid-column: span 4;
-}
-
-button {
-  padding: 30px;
-  font-size: 30px;
-  user-select: none;
+  background-color: var(--equal);
+  color: var(--text1);
 }
