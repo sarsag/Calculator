@@ -54,6 +54,12 @@ document.onkeydown = function (e) {
     case 57:
       display(9);
       break;
+    case 190:
+      display(".");
+      break;
+    case 67:
+      clearDisplay();
+      break;
   }
   switch (e.key) {
     case "Enter":
@@ -82,4 +88,3 @@ document.onkeydown = function (e) {
       break;
   }
 };
-
