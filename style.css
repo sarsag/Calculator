@@ -1,7 +1,7 @@
 :root {
   --main: #43474a;
   --equal: #1099e3;
-  --operator: #ffa600;
+  --operator: #ff7930;
   --text1: white;
   --text2: #1099e3;
   --background: #30302f;
@@ -31,7 +31,7 @@ button {
   background-color: var(--main);
   color: var(--text1);
   border-radius: 10px;
-  border: 1px solid var(--border);
+  border: none;
 }
 
 #buttons {
@@ -51,6 +51,11 @@ button {
 #buttons .operator {
   background-color: var(--operator);
   color: var(--text1);
+}
+
+#backspace {
+  float: right;
+  background-color: var(--background);
 }
 
 #buttons #equals {
