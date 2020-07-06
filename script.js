@@ -5,7 +5,8 @@ function display(num) {
 function calculate() {
   let cal = document.getElementById("display").innerText;
   document.getElementById("history").innerText = cal;
-  let calculated = eval(cal);
+  var zerocal = cal.replace(/^0+/, "");
+  let calculated = eval(zerocal);
   document.getElementById("display").innerText = calculated;
 }
 
