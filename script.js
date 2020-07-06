@@ -53,7 +53,7 @@ document.onkeydown = function (e) {
       break;
     case 57:
       display(9);
-      break;~
+      break;
   }
   switch (e.key) {
     case "Enter":
